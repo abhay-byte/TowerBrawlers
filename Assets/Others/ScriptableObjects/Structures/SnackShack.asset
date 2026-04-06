@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813cb173c5f9dd9da9ed06b824259e48, type: 3}
+  m_Name: SnackShack
+  m_EditorClassIdentifier: Assembly-CSharp::TowerDefense.Data.StructureData
+  structureID: snack_shack
+  displayName: Snack Shack
+  flavorText: Armies run on snacks, bad opinions, and overtime.
+  type: 0
+  faction: 0
+  prefab: {fileID: 1362255755749402, guid: 1b5d1a6deebd81e4bba2448d18378844, type: 3}
+  snackCost: 50
+  health: 150
+  attackRange: 0
+  damage: 0
+  attackSpeed: 0
+  economyRate: 3
+  buffAmount: 0
+  auraRadius: 0

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d018d5f35dadef81885f34d4f636d94e, type: 3}
+  m_Name: Level01_SoupLadder
+  m_EditorClassIdentifier: Assembly-CSharp::TowerDefense.Data.LevelData
+  levelID: level_01
+  levelName: The Soup Ladder Incident
+  description: Your first battle. The Mudsnout Horde kicked the sacred soup ladder.
+    Handle it.
+  levelNumber: 1
+  playerFaction: 0
+  availablePlayerUnits:
+  - {fileID: 11400000, guid: 816c2dab682946743a04fdde4e0d7d58, type: 2}
+  - {fileID: 11400000, guid: d3574920cc86d06928bdfc4d1d56e4b1, type: 2}
+  availableStructures:
+  - {fileID: 11400000, guid: a15738ac82ec3838d864007697a0465c, type: 2}
+  startingSnacks: 50
+  enemyFaction: 1
+  enemyWaves:
+  - {fileID: 11400000, guid: 385ab19000bb404b0ab3b8ac8ecc9fd0, type: 2}
+  - {fileID: 11400000, guid: 9674a19d1fb375840ab569bd6f25bc81, type: 2}
+  - {fileID: 11400000, guid: 98f71e317b64892ef9848bb8c37e6a9c, type: 2}
+  phaseCycleDuration: 0
+  battleSceneName: BattleLevel01
+  coinReward: 100
+  rewardItemID: golden_soup_ladle
+  isTutorial: 1
+  tutorialSteps:
+  - stepID: step_1_enter
+    instructionText: That ugly tower across the lane is the enemy. Kindly remove
+      it. Deploy a Spoon Guard to start!
+    highlightTarget: 
+    triggerType: OnStart
+    triggerCount: 1
+    allowContinue: 0
+  - stepID: step_2_deploy
+    instructionText: Units fight on their own. Your job is to decide what arrives
+      and when. Watch the Mud Grunters come!
+    highlightTarget: 
+    triggerType: OnUnitDeployed
+    triggerCount: 1
+    allowContinue: 0
+  - stepID: step_3_economy
+    instructionText: Build a Snack Shack. Armies run on snacks, bad opinions, and
+      overtime.
+    highlightTarget: 
+    triggerType: OnStructureBuilt
+    triggerCount: 1
+    allowContinue: 0
+  - stepID: step_4_defend
+    instructionText: That Fork Flinger in the back is annoying on purpose. Send another
+      troop!
+    highlightTarget: 
+    triggerType: OnUnitDeployed
+    triggerCount: 3
+    allowContinue: 0
+  - stepID: step_5_finish
+    instructionText: Excellent. Continue diplomacy. Keep pushing until their tower
+      falls!
+    highlightTarget: 
+    triggerType: OnTowerLowHP
+    triggerCount: 1
+    allowContinue: 1

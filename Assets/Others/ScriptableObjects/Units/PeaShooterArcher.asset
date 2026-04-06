@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167d9dc629e52acbf9f4d0d1d29cd6bd, type: 3}
+  m_Name: PeaShooterArcher
+  m_EditorClassIdentifier: Assembly-CSharp::TowerDefense.Data.UnitData
+  unitID: pea_shooter
+  displayName: Pea Shooter
+  flavorText: Acts elite despite firing peas at people.
+  role: 1
+  faction: 0
+  prefab: {fileID: 2224834628610083241, guid: 1906c8b8d7539724b9f8bed9421c270e, type: 3}
+  snackCost: 35
+  baseStats:
+    maxHealth: 60
+    damage: 12
+    attackSpeed: 0.8
+    attackRange: 6
+    moveSpeed: 2
+    towerDamageMultiplier: 0.3
+  spawnCooldown: 4

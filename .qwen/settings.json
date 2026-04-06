@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git diff *)",
+      "Bash(rm *)",
+      "Bash(find *)",
+      "Bash(do)",
+      "Bash(then)",
+      "Bash(sed *)",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(mkdir *)",
+      "Bash(which *)",
+      "Bash(sudo *)",
+      "Bash(ls *)",
+      "Bash(curl *)",
+      "mcp__unityMCP__batch_execute",
+      "mcp__unityMCP__execute_code",
+      "mcp__unityMCP__read_console",
+      "mcp__unityMCP__execute_custom_tool",
+      "mcp__unityMCP__manage_animation",
+      "WebSearch",
+      "Bash(python3 *)",
+      "mcp__unityMCP__manage_editor",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git config *)",
+      "Bash(gh *)",
+      "mcp__unityMCP__create_script",
+      "mcp__unityMCP__manage_scene",
+      "mcp__unityMCP__manage_gameobject"
+    ]
+  },
+  "$version": 3
+}

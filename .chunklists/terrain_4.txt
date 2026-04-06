@@ -1,0 +1,16 @@
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Snow_Normal.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Snow_Normal.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Soil_Rocks_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Soil_Rocks_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_B_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_B_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_Moss_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_Moss_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Rock_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Rock_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_A_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Grass_A_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Pebbles_C_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Pebbles_C_BaseColor.tif.meta
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Muddy_BaseColor.tif
+Assets/Others/TerrainSampleAssets/Textures/Terrain/Muddy_BaseColor.tif.meta

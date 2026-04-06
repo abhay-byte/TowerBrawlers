@@ -1,0 +1,55 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <!-- Top HUD Bar -->
+    <ui:VisualElement name="TopBar" style="flex-direction: row; justify-content: space-between; padding-top: 8px; padding-left: 12px; padding-right: 12px; position: absolute; top: 0; left: 0; right: 0; height: 40px;">
+        <!-- Player Tower HP -->
+        <ui:VisualElement name="PlayerTowerHPContainer" style="flex-direction: column; min-width: 180px; margin-right: 10px;">
+            <ui:Label text="Your Tower" name="PlayerTowerLabel" style="font-size: 11; color: rgb(255, 215, 0); -unity-text-align: middle-center;" />
+            <ui:ProgressBar name="PlayerTowerHP" value="100" style="height: 16px; -unity-bar-color: rgb(50, 205, 50); background-color: rgb(60, 60, 60);" />
+            <ui:Label name="PlayerTowerHPText" text="1000/1000" style="font-size: 10; color: white; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+        
+        <!-- Resources -->
+        <ui:VisualElement name="ResourceBar" style="flex-direction: row; align-items: center; gap: 15px;">
+            <ui:Label name="SnackLabel" text="🍕 50" style="font-size: 16; color: rgb(255, 220, 100); -unity-text-align: middle-center; min-width: 80px;" />
+            <ui:Label name="DramaLabel" text="🎭 0" style="font-size: 16; color: rgb(255, 100, 100); -unity-text-align: middle-center; min-width: 80px;" />
+            <ui:Label name="PhaseLabel" text="🫖 Tea Time" style="font-size: 12; color: rgb(200, 200, 255); -unity-text-align: middle-center; min-width: 100px;" />
+        </ui:VisualElement>
+        
+        <!-- Enemy Tower HP -->
+        <ui:VisualElement name="EnemyTowerHPContainer" style="flex-direction: column; min-width: 180px; margin-left: 10px;">
+            <ui:Label text="Enemy Tower" name="EnemyTowerLabel" style="font-size: 11; color: rgb(255, 80, 80); -unity-text-align: middle-center;" />
+            <ui:ProgressBar name="EnemyTowerHP" value="100" style="height: 16px; -unity-bar-color: rgb(220, 50, 50); background-color: rgb(60, 60, 60);" />
+            <ui:Label name="EnemyTowerHPText" text="800/800" style="font-size: 10; color: white; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    
+    <!-- Bottom Bar - troop cards center, structures bottom-right per UX spec -->
+    <ui:VisualElement name="BottomBar" style="position: absolute; bottom: 0; left: 0; right: 0; height: 130px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; justify-content: flex-end; align-items: stretch;">
+        <ui:VisualElement name="ActionBar" style="position: absolute; left: 12px; right: 190px; bottom: 12px; min-height: 86px; flex-direction: row; justify-content: center; align-items: flex-end; flex-wrap: wrap;">
+            <ui:VisualElement name="UnitCardContainer" style="flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap; margin-right: 12px;" />
+            <ui:Button name="AbilityButton" text="📢 Motivational Yelling" style="min-width: 140px; min-height: 60px; margin-top: 8px; font-size: 11; background-color: rgb(80, 50, 120); color: white; border-radius: 8; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="StructureDock" style="position: absolute; right: 12px; bottom: 12px; min-width: 166px; max-width: 166px; min-height: 86px; padding-top: 8px; padding-bottom: 8px; padding-left: 10px; padding-right: 10px; flex-direction: column; align-items: center; justify-content: flex-end; background-color: rgba(22, 22, 28, 0.88); border-radius: 10px; border-width: 1px; border-color: rgba(255, 255, 255, 0.14);">
+            <ui:Label name="StructureDockLabel" text="Build Slots" style="font-size: 10; color: rgb(210, 210, 230); margin-bottom: 6px; -unity-text-align: middle-center;" />
+            <ui:VisualElement name="StructureContainer" style="flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    
+    <!-- Tutorial Overlay -->
+    <ui:VisualElement name="TutorialOverlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.4); display: none;">
+        <ui:VisualElement name="TutorialPanel" style="flex-direction: column; align-items: center; background-color: rgb(30, 30, 50); border-radius: 12px; padding: 20px; min-width: 350px; max-width: 500px; border-width: 2px; border-color: rgb(255, 215, 0);">
+            <ui:Label name="InstructionLabel" text="Tutorial instruction goes here..." style="font-size: 16; color: white; -unity-text-align: middle-center; margin-bottom: 15px;" />
+            <ui:Button name="ContinueButton" text="Continue →" style="min-width: 120px; min-height: 36px; font-size: 14; background-color: rgb(255, 215, 0); color: rgb(30, 30, 50); border-radius: 6; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    
+    <!-- Game Over Panel -->
+    <ui:VisualElement name="GameOverPanel" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.6); display: none;">
+        <ui:VisualElement name="ResultPanel" style="flex-direction: column; align-items: center; background-color: rgb(30, 30, 50); border-radius: 12px; padding: 30px; min-width: 350px; border-width: 2px; border-color: white;">
+            <ui:Label name="ResultLabel" text="VICTORY!" style="font-size: 28; color: rgb(50, 255, 50); -unity-text-align: middle-center; margin-bottom: 10px;" />
+            <ui:Label name="RewardLabel" text="+100 Coins | Golden Soup Ladle" style="font-size: 14; color: rgb(255, 220, 100); -unity-text-align: middle-center; margin-bottom: 20px;" />
+            <ui:Button name="RestartButton" text="Play Again" style="min-width: 140px; min-height: 40px; font-size: 16; background-color: rgb(255, 215, 0); color: rgb(30, 30, 50); border-radius: 8; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

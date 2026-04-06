@@ -1,0 +1,65 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "command": "msbuild",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/TowerDefense.slnx",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "/v:minimal"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Build the project using MSBuild"
+        },
+        {
+            "label": "Build (Debug)",
+            "command": "msbuild",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/TowerDefense.slnx",
+                "-t:Build",
+                "-p:Configuration=Debug",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign",
+                "/v:minimal"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build",
+            "detail": "Build the project in Debug mode"
+        },
+        {
+            "label": "Clean",
+            "command": "msbuild",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/TowerDefense.slnx",
+                "-t:Clean",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build",
+            "detail": "Clean the project"
+        },
+        {
+            "label": "Restore",
+            "command": "msbuild",
+            "type": "shell",
+            "args": [
+                "${workspaceFolder}/TowerDefense.slnx",
+                "-t:Restore",
+                "/v:minimal"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build",
+            "detail": "Restore NuGet packages"
+        }
+    ]
+}

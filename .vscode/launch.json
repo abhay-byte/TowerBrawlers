@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Unity Editor",
+            "type": "unity",
+            "request": "launch",
+            "pathMappings": [
+                {
+                    "url": "file://${workspaceFolder}/Assets",
+                    "path": "${workspaceFolder}/Assets"
+                }
+            ]
+        },
+        {
+            "name": "Attach to Unity",
+            "type": "unity",
+            "request": "attach"
+        },
+        {
+            "name": "Unity Player (Debug)",
+            "type": "unity",
+            "request": "launch",
+            "pathMappings": [
+                {
+                    "url": "file://${workspaceFolder}/Assets",
+                    "path": "${workspaceFolder}/Assets"
+                }
+            ]
+        },
+        {
+            "name": "Attach to Unity",
+            "type": "vstuc",
+            "request": "attach"
+        }
+    ]
+}
